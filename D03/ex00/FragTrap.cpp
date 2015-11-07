@@ -3,10 +3,10 @@
 //                                                        :::      ::::::::   //
 //   FragTrap.cpp                                       :+:      :+:    :+:   //
 //                                                    +:+ +:+         +:+     //
-//   By: sdurr <sdurr@student.42.fr>                +#+  +:+       +#+        //
+//   By: getrembl <marvin@42.fr>                    +#+  +:+       +#+        //
 //                                                +#+#+#+#+#+   +#+           //
-//   Created: 2015/06/18 10:55:08 by sdurr             #+#    #+#             //
-//   Updated: 2015/06/19 15:29:35 by sdurr            ###   ########.fr       //
+//   Created: 2015/11/07 16:51:43 by getrembl          #+#    #+#             //
+//   Updated: 2015/11/07 16:53:16 by getrembl         ###   ########.fr       //
 //                                                                            //
 // ************************************************************************** //
 
@@ -35,7 +35,7 @@ FragTrap & FragTrap::operator=( FragTrap const & rhs ) {
 	return *this;
 }
 
-/********************************************************************************/
+// ************************************************************************** //
 
 void		FragTrap::rangedAttack( std::string const & target ) {
 	std::cout << _name << " attacks " << target << " at range, causing  " <<  _rangeAtackDamage << " points of damage !" << std::endl;
@@ -89,7 +89,8 @@ void		FragTrap::vaulhunter_dot_exe( std::string const & target ) {
 		std::cout << "You don't have enough energy's Points" << std::endl;
 }
 
-/*************************Get************************************/
+// ********************************GET*************************************** //
+
 std::string	FragTrap::getName( void ) const {
 	return this->_name;
 }
@@ -127,7 +128,8 @@ int			FragTrap::getLevel( void ) const {
 	return this->_level;
 }
 
-/***********************************SET****************************/
+// *****************************SET****************************************** //
+
 void		FragTrap::setName( std::string N ) {
 	this->_name = N;
 }
@@ -189,7 +191,8 @@ void		FragTrap::setLevel( int x ) {
 	this->_level = x;
 }
 
-/************************************************************************/
+// ************************************************************************** //
+
 FragTrap::~FragTrap( void ) {
 	std::cout << getName() << ": good Bye " << std::endl;
 	return ;
@@ -199,3 +202,5 @@ std::ostream & operator<<(std::ostream & o, FragTrap const & i ) {
 	o << i.getName();
 	return o;
 }
+
+// ************************************************************************** //

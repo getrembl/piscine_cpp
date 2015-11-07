@@ -3,10 +3,10 @@
 //                                                        :::      ::::::::   //
 //   main.cpp                                           :+:      :+:    :+:   //
 //                                                    +:+ +:+         +:+     //
-//   By: sdurr <sdurr@student.42.fr>                +#+  +:+       +#+        //
+//   By: getrembl <marvin@42.fr>                    +#+  +:+       +#+        //
 //                                                +#+#+#+#+#+   +#+           //
-//   Created: 2015/06/18 10:55:12 by sdurr             #+#    #+#             //
-//   Updated: 2015/06/19 15:46:32 by sdurr            ###   ########.fr       //
+//   Created: 2015/11/07 17:01:38 by getrembl          #+#    #+#             //
+//   Updated: 2015/11/07 17:02:01 by getrembl         ###   ########.fr       //
 //                                                                            //
 // ************************************************************************** //
 
@@ -28,7 +28,8 @@ int main( void )
 
 	std::cout << "Name " << Clara.getName() << " Hit Points: " << Clara.getHitPoint() << " energy: " << Clara.getEnergy() << " Level : " << Clara.getLevel() << std::endl;
 
-/************************************/
+// ************************************************************************** //
+
 	std::cout << std::endl << "--------------COMBAT   Clara VS Aurelien ------------------" << std::endl;
 	Clara.rangedAttack( "Aurelien" );
 	Aurelien.takeDamage(20);
@@ -54,7 +55,8 @@ int main( void )
 	Aurelien.takeDamage(25);
 	Aurelien.takeDamage(25);
 
-	/*********************************/
+// ************************************************************************** //
+
 	std::cout << std::endl << " --------------------GLORY TO THE QUEEN  ------------------   " <<std::endl;
 		std::cout << Clara.getName() << " say's : I'm the Best on you knees before you're Queen " << std::endl;
 
@@ -62,3 +64,5 @@ int main( void )
 		std::cout << std::endl << "---------------------------------FINISH-----------------------------" << std::endl;
 		return 0;
 }
+
+// ************************************************************************** //

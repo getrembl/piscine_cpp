@@ -3,10 +3,10 @@
 //                                                        :::      ::::::::   //
 //   Fixed.class.hpp                                    :+:      :+:    :+:   //
 //                                                    +:+ +:+         +:+     //
-//   By: sdurr <sdurr@student.42.fr>                +#+  +:+       +#+        //
+//   By: getrembl <marvin@42.fr>                    +#+  +:+       +#+        //
 //                                                +#+#+#+#+#+   +#+           //
-//   Created: 2015/06/17 09:26:04 by sdurr             #+#    #+#             //
-//   Updated: 2015/06/17 15:13:26 by sdurr            ###   ########.fr       //
+//   Created: 2015/11/06 15:14:49 by getrembl          #+#    #+#             //
+//   Updated: 2015/11/06 17:28:10 by getrembl         ###   ########.fr       //
 //                                                                            //
 // ************************************************************************** //
 
@@ -25,14 +25,16 @@ public:
 	Fixed & operator=(Fixed const & rhs);
 	int getRawBits( void ) const;
 	int getNbBits( void ) const;
-
+	void setRawBits( int const raw );
 
 
 private:
-	int _fixed;
-	int const  _bits;
+	int			_fixed;
+	int const	_bits;
 };
 
 std::ostream & operator<<( std::ostream & o, Fixed const & i );
 
 #endif
+
+// ************************************************************************** //

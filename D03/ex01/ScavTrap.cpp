@@ -3,10 +3,10 @@
 //                                                        :::      ::::::::   //
 //   ScavTrap.cpp                                       :+:      :+:    :+:   //
 //                                                    +:+ +:+         +:+     //
-//   By: sdurr <sdurr@student.42.fr>                +#+  +:+       +#+        //
+//   By: getrembl <marvin@42.fr>                    +#+  +:+       +#+        //
 //                                                +#+#+#+#+#+   +#+           //
-//   Created: 2015/06/18 16:47:03 by sdurr             #+#    #+#             //
-//   Updated: 2015/06/19 15:28:50 by sdurr            ###   ########.fr       //
+//   Created: 2015/11/07 16:56:32 by getrembl          #+#    #+#             //
+//   Updated: 2015/11/07 16:57:43 by getrembl         ###   ########.fr       //
 //                                                                            //
 // ************************************************************************** //
 
@@ -42,7 +42,7 @@ ScavTrap & ScavTrap::operator=( ScavTrap const & rhs ) {
 	return *this;
 }
 
-/********************************************************************************/
+// ************************************************************************** //
 
 void	ScavTrap::rangedAttack( std::string const & target ) {
 	std::cout << _name << " ScavTrap attacks " << target << " at range, causing  " <<  _rangeAtackDamage << " points of damage ! More FragTrag ;) " << std::endl;
@@ -103,7 +103,8 @@ void	ScavTrap::challengeNewComer( std::string const & target ) {
 		std::cout << "You don't have enough energy's Points" << std::endl;
 }
 
-/*************************Get************************************/
+// ****************************GET******************************************* //
+
 std::string	ScavTrap::getName( void ) const {
 	return this->_name;
 }
@@ -141,7 +142,8 @@ int	ScavTrap::getLevel( void ) const {
 	return this->_level;
 }
 
-/***********************************SET****************************/
+// **********************************SET************************************* //
+
 void	ScavTrap::setName( std::string N ) {
 	this->_name = N;
 }
@@ -201,7 +203,8 @@ void	ScavTrap::setLevel( int x ) {
 	this->_level = x;
 }
 
-/************************************************************************/
+// ************************************************************************** //
+
 ScavTrap::~ScavTrap( void ) {
 	std::cout << getName() << ": Blablabla je m'en vais " << std::endl;
 	return ;
@@ -211,3 +214,5 @@ std::ostream & operator<<(std::ostream & o, ScavTrap const & i ) {
 	o << i.getName();
 	return o;
 }
+
+// ************************************************************************** //

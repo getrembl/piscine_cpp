@@ -1,12 +1,12 @@
 // ************************************************************************** //
 //                                                                            //
 //                                                        :::      ::::::::   //
-//   Claptrap.cpp                                       :+:      :+:    :+:   //
+//   ClapTrap.cpp                                       :+:      :+:    :+:   //
 //                                                    +:+ +:+         +:+     //
-//   By: sdurr <sdurr@student.42.fr>                +#+  +:+       +#+        //
+//   By: getrembl <marvin@42.fr>                    +#+  +:+       +#+        //
 //                                                +#+#+#+#+#+   +#+           //
-//   Created: 2015/06/18 17:01:05 by sdurr             #+#    #+#             //
-//   Updated: 2015/06/19 15:58:12 by sdurr            ###   ########.fr       //
+//   Created: 2015/11/07 16:58:49 by getrembl          #+#    #+#             //
+//   Updated: 2015/11/07 16:59:42 by getrembl         ###   ########.fr       //
 //                                                                            //
 // ************************************************************************** //
 
@@ -52,7 +52,7 @@ ClapTrap & ClapTrap::operator=( ClapTrap const & rhs ) {
 	return *this;
 }
 
-/********************************************************************************/
+// ************************************************************************** //
 
 void ClapTrap::rangedAttack( std::string const & target ) {
 	std::cout << _name << " attacks " << target << " at range, causing  " <<  _rangeAtackDamage << " points of damage !" << std::endl;
@@ -74,7 +74,8 @@ void ClapTrap::beRepaired( unsigned int amount ) {
 }
 
 
-/*************************Get************************************/
+// ********************************GET*************************************** //
+
 std::string ClapTrap::getName( void ) const {
 	return this->_name;
 }
@@ -112,7 +113,8 @@ int ClapTrap::getLevel( void ) const {
 	return this->_level;
 }
 
-/***********************************SET****************************/
+// ********************************SET*************************************** //
+
 void ClapTrap::setName( std::string N ) {
 	this->_name = N;
 }
@@ -172,7 +174,8 @@ void ClapTrap::setLevel( int x ) {
 	this->_level = x;
 }
 
-/************************************************************************/
+// ************************************************************************** //
+
 ClapTrap::~ClapTrap( void ) {
 	return ;
 }
@@ -181,3 +184,5 @@ std::ostream & operator<<(std::ostream & o, ClapTrap const & i ) {
 	o << i.getName();
 	return o;
 }
+
+// ************************************************************************** //
