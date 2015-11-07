@@ -3,12 +3,13 @@
 //                                                        :::      ::::::::   //
 //   Sorcerer.cpp                                       :+:      :+:    :+:   //
 //                                                    +:+ +:+         +:+     //
-//   By: sdurr <sdurr@student.42.fr>                +#+  +:+       +#+        //
+//   By: getrembl <marvin@42.fr>                    +#+  +:+       +#+        //
 //                                                +#+#+#+#+#+   +#+           //
-//   Created: 2015/06/19 10:54:33 by sdurr             #+#    #+#             //
-//   Updated: 2015/06/20 09:02:09 by sdurr            ###   ########.fr       //
+//   Created: 2015/11/07 17:49:54 by getrembl          #+#    #+#             //
+//   Updated: 2015/11/07 17:49:55 by getrembl         ###   ########.fr       //
 //                                                                            //
 // ************************************************************************** //
+
 
 #include "Sorcerer.hpp"
 #include <iostream>
