@@ -3,10 +3,10 @@
 //                                                        :::      ::::::::   //
 //   ScavTrap.cpp                                       :+:      :+:    :+:   //
 //                                                    +:+ +:+         +:+     //
-//   By: sdurr <sdurr@student.42.fr>                +#+  +:+       +#+        //
+//   By: getrembl <marvin@42.fr>                    +#+  +:+       +#+        //
 //                                                +#+#+#+#+#+   +#+           //
-//   Created: 2015/06/18 16:47:03 by sdurr             #+#    #+#             //
-//   Updated: 2015/06/19 16:11:56 by sdurr            ###   ########.fr       //
+//   Created: 2015/11/07 17:00:57 by getrembl          #+#    #+#             //
+//   Updated: 2015/11/07 17:01:10 by getrembl         ###   ########.fr       //
 //                                                                            //
 // ************************************************************************** //
 
@@ -58,7 +58,7 @@ ScavTrap & ScavTrap::operator=( ScavTrap const & rhs ) {
 	return *this;
 }
 
-/********************************************************************************/
+// ************************************************************************** //
 
 void	ScavTrap::rangedAttack( std::string const & target ) {
 	std::cout << _name << " ScavTrap attacks " << target << " at range, causing  " <<  _rangeAtackDamage << " points of damage ! More FragTrag ;) " << std::endl;
@@ -121,3 +121,5 @@ std::ostream & operator<<(std::ostream & o, ScavTrap const & i ) {
 	o << i.getName();
 	return o;
 }
+
+// ************************************************************************** //

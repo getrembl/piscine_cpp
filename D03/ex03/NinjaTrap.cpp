@@ -1,12 +1,12 @@
 // ************************************************************************** //
 //                                                                            //
 //                                                        :::      ::::::::   //
-//   NinjaTrap.cpp                                       :+:      :+:    :+:   //
+//   NinjaTrap.cpp                                      :+:      :+:    :+:   //
 //                                                    +:+ +:+         +:+     //
-//   By: sdurr <sdurr@student.42.fr>                +#+  +:+       +#+        //
+//   By: getrembl <marvin@42.fr>                    +#+  +:+       +#+        //
 //                                                +#+#+#+#+#+   +#+           //
-//   Created: 2015/06/18 16:47:03 by sdurr             #+#    #+#             //
-//   Updated: 2015/06/19 16:07:30 by sdurr            ###   ########.fr       //
+//   Created: 2015/11/07 17:04:38 by getrembl          #+#    #+#             //
+//   Updated: 2015/11/07 17:04:53 by getrembl         ###   ########.fr       //
 //                                                                            //
 // ************************************************************************** //
 
@@ -59,7 +59,7 @@ NinjaTrap & NinjaTrap::operator=( NinjaTrap const & rhs ) {
 	return *this;
 }
 
-/********************************************************************************/
+// ************************************************************************** //
 
 void	NinjaTrap::rangedAttack( std::string const & target ) {
 	std::cout << _name << " NinjaTrap attacks " << target << " at range, causing  " <<  _rangeAtackDamage << " points of damage ! More FragTrag ;) " << std::endl;
@@ -90,3 +90,5 @@ std::ostream & operator<<(std::ostream & o, NinjaTrap const & i ) {
 	o << i.getName();
 	return o;
 }
+
+// ************************************************************************** //

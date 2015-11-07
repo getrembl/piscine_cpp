@@ -3,10 +3,10 @@
 //                                                        :::      ::::::::   //
 //   main.cpp                                           :+:      :+:    :+:   //
 //                                                    +:+ +:+         +:+     //
-//   By: sdurr <sdurr@student.42.fr>                +#+  +:+       +#+        //
+//   By: getrembl <marvin@42.fr>                    +#+  +:+       +#+        //
 //                                                +#+#+#+#+#+   +#+           //
-//   Created: 2015/06/18 10:55:12 by sdurr             #+#    #+#             //
-//   Updated: 2015/06/19 15:16:18 by sdurr            ###   ########.fr       //
+//   Created: 2015/11/07 16:53:59 by getrembl          #+#    #+#             //
+//   Updated: 2015/11/07 16:54:36 by getrembl         ###   ########.fr       //
 //                                                                            //
 // ************************************************************************** //
 
@@ -24,7 +24,8 @@ int main( void )
 
 	std::cout << "Name " << Clara.getName() << " Hit Points: " << Clara.getHitPoint() << " energy: " << Clara.getEnergy() << " Level : " << Clara.getLevel() << std::endl;
 
-/****************************/
+// ************************************************************************** //
+
 	std::cout << std::endl << "        Test energie vaulhunter " << std::endl;
 	srand(time(NULL));
 	Clara.vaulhunter_dot_exe(" Aurelien ");
@@ -37,7 +38,8 @@ int main( void )
 	Clara.setEnergy(150);
 	std::cout << "CLara's energy is : " << Clara.getEnergy() << std::endl;
 
-/************************************/
+// ************************************************************************** //
+
 	std::cout << std::endl << "         Combat" << std::endl;
 	Clara.rangedAttack( "Aurelien" );
 	Aurelien.takeDamage(20);
@@ -73,7 +75,8 @@ Clara.rangedAttack( "Aurelien" );
 
 	std::cout << std::endl << "Name " << Aurelien.getName() << " Hit Points: " << Aurelien.getHitPoint() << " energy: " << Aurelien.getEnergy() << " Level : " << Aurelien.getLevel() << std::endl;
 
-		/*********************************/
+// ************************************************************************** //
+
 	std::cout << std::endl << "  -------------------- GLORY ALL OF THE QUEEN----------------     " <<std::endl;
 		std::cout << Clara.getName() << " say's : I'm the Best on you knees before you're Queen " << std::endl;
 
@@ -81,3 +84,5 @@ Clara.rangedAttack( "Aurelien" );
 
 		return 0;
 }
+
+// ************************************************************************** //
